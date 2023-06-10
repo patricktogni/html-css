@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*
+    em HTML id = # em CSS
+    em HTML class = . em CSS
+    : = pseudo class
+    :: = pseudo elemento
+    > children(filho)
+    height = altura 
+    width = largura
+    border = borda
+    padding = enchimento
+    margin = margem
+    outline = contorno/traçado
+*/
+
+
+
+body{
+    background-color: rgb(191, 255, 234);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#principal {
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(2, 90, 61);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    color: rgb(0, 0, 0);
+}
+
+.basico {
+    background-color: rgb(2, 90, 61);
+    font-weight: bold;
+}

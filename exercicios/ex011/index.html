@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanha do seu navegador</p>
+    <!--ISSO É IMPORTANTE !! IMAGENS FLEXIVEIS-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.PNG" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.PNG" type="image/png">
+        <img src="imagens/foto-g.PNG" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- formatos de audios suportados MP3 WAV OGG-->
+
+    <audio preload="metadata" controls>
+        <!--controls para aparecer o controle de audio
+        loop para reproduzir o audio novamente após terminar
+        autoplay para iniciar o audio automaticamente-->
+        <source src="audio/linkpark.mp3" type="audio/mpeg">
+        <source src="audio/linkpark.ogg" type="audio/ogg">
+        <source src="audio/linkpark.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio</p>
+        <a href="audio/linkpark.mp3">Clique aqui para baixar o arquivo</a>
+    </audio>
+    
+    
+    
+</body>
+</html>
